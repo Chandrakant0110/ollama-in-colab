@@ -6,37 +6,33 @@ This repository provides a simple and free way to run any Ollama language model 
 
 * **Free GPU Access:** Leverage Google Colab's free GPUs to run large Ollama models. 🎁
 * **Easy Setup:** Step-by-step instructions in the Colab notebook.  ➡️
-* **Customizable UI:** Connect your Ollama model to a Hugging Face Space for a streamlined chat experience. (Optional) 💬
+* **Customizable UI:** Connect your Ollama model to a Hugging Face Space for a streamlined chat experience. 💬
 * **Run any Ollama Model:** Adaptable for different model sizes and types.  ⚙️
 
 
 ## Getting Started 🚦
 
 1. **ngrok Authtoken:** Obtain an authtoken from [ngrok](https://ngrok.com/). You'll need a free account. This is crucial for exposing your Colab runtime. 🔑
-2. **Google Colab:** Open the provided Colab notebook: [Link to your `ollama_setup.ipynb` file] 💻
-3. **Follow the Instructions:** The notebook guides you through the setup process, including:
-   * Installing necessary libraries. 🛠️
-   * Setting your ngrok authtoken. 🔒
-   * Downloading and running your chosen Ollama model.  ⬇️
-   * (Optional) Connecting to a Hugging Face Space for the UI.  🔗
-
-## Duplicate This Space on Hugging Face
-
-[![Duplicate Space](https://img.shields.io/badge/Duplicate%20Space-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/chandrakant-s4/open-webui?duplicate=true)
-
-
-## Colab Notebook Walkthrough 🚶‍♀️
-
-**(Briefly summarize the key steps from your notebook here. This helps users understand the process before opening the notebook.)**
-
-* Step 1: Install necessary libraries 📚
-* Step 2: Configure ngrok and expose the port 🌐
-* Step 3: Run your Ollama model!  🏃‍♂️
+2. **Google Colab:** Open the provided Colab notebook: [Link](https://colab.research.google.com/drive/1BJbUnfZ0qoouDyafjsWcth5JHhITSL78#scrollTo=EhKXNqknGilz) 💻
+   * Add you Auth Token in the Secrets Tab  
+   * Connect to the T4 Runtime Type. 
+   * Run both the cells. 
+   * On sucessfully connection of ollama with ngrok you'll get a ngrok link, copy it. 
+3. **Duplicate the Huggingface Spaces:** 
+    [![Duplicate Space](https://img.shields.io/badge/Duplicate%20Space-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/chandrakant-s4/open-webui?duplicate=true)
+   * Wait for sometime till it is installing necessary libraries. 🛠️
+   * Create your admin account. 🔒
+   * Navigate to the Settings > Admin Settings.  ⬇️
+   * Head over to the Connections > Disable Open API toggle > Enable Ollama API toggle button.  ⬇️
+   * Now change the Ollama url to the ngrok url you got on Colab ⬇️
+   * Make sure to remove the last forward slash in the url. ⬇️
+   * Click Save.  🔗
+   * Click Strat new Chat.  🔗
+   * Now you would be able to see all the models in the select model drop down! :)  🔗
+   * Happpily Prompt Now!  🔗
 
 
 ## Troubleshooting ⚠️
-
-**(Add common troubleshooting tips here as you encounter them. This will be very helpful for other users.)**
 
 * **ngrok Issues:** Make sure your authtoken is correctly set. Check the ngrok dashboard for any errors.  🕵️‍♀️
 
