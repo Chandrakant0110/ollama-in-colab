@@ -1,47 +1,63 @@
-# Run Any Ollama Model on Google Colab with Custom UI! 🚀
+# **Run Any Ollama Model on Google Colab with a Custom UI! 🚀**  
 
-This repository provides a simple and free way to run any Ollama language model on Google Colab and connect it to a user-friendly interface. No more resource limitations! 🎉
-
-## Features ✨
-
-* **Free GPU Access:** Leverage Google Colab's free GPUs to run large Ollama models. 🎁
-* **Easy Setup:** Step-by-step instructions in the Colab notebook.  ➡️
-* **Customizable UI:** Connect your Ollama model to a Hugging Face Space for a streamlined chat experience. 💬
-* **Run any Ollama Model:** Adaptable for different model sizes and types.  ⚙️
+This repository provides a **simple, free, and efficient** way to run any **Ollama language model** on **Google Colab** and connect it to a **user-friendly interface**. Say goodbye to resource limitations! 🎉  
 
 
-## Getting Started 🚦
+## **Features ✨**  
 
-1. **ngrok Authtoken:** Obtain an authtoken from [ngrok](https://ngrok.com/). You'll need a free account. This is crucial for exposing your Colab runtime. 🔑
-2. **Google Colab:** Open the provided Colab notebook: [Link](https://colab.research.google.com/drive/1BJbUnfZ0qoouDyafjsWcth5JHhITSL78#scrollTo=EhKXNqknGilz) 💻
-   * Add you Auth Token in the Secrets Tab  
-   * Connect to the T4 Runtime Type. 
-   * Run both the cells. 
-   * On sucessfully connection of ollama with ngrok you'll get a ngrok link, copy it. 
-3. **Duplicate the Huggingface Spaces:** 
-    [![Duplicate Space](https://img.shields.io/badge/Duplicate%20Space-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/chandrakant-s4/open-webui?duplicate=true)
-   * Wait for sometime till it is installing necessary libraries. 🛠️
-   * Create your admin account. 🔒
-   * Navigate to the Settings > Admin Settings.  ⬇️
-   * Head over to the Connections > Disable Open API toggle > Enable Ollama API toggle button.  ⬇️
-   * Now change the Ollama url to the ngrok url you got on Colab ⬇️
-   * Make sure to remove the last forward slash in the url. ⬇️
-   * Click Save.  🔗
-   * Click Strat new Chat.  🔗
-   * Now you would be able to see all the models in the select model drop down! :)  🔗
-   * Happpily Prompt Now!  🔗
+✅ **Free GPU Access** – Utilize Google Colab’s free GPUs to run large Ollama models effortlessly.  
+✅ **Easy Setup** – Step-by-step instructions provided in the Colab notebook.  
+✅ **Customizable UI** – Connect your Ollama model to a **Hugging Face Space** for an intuitive chat experience.  
+✅ **Supports Any Ollama Model** – Easily adaptable for different model sizes and types.  
 
 
-## Troubleshooting ⚠️
+## **Getting Started 🚦**  
 
-* **ngrok Issues:** Make sure your authtoken is correctly set. Check the ngrok dashboard for any errors.  🕵️‍♀️
+### **1️⃣ Obtain an ngrok Authtoken**  
+- Create a free account on **[ngrok](https://ngrok.com/)**.  
+- Retrieve your **authtoken**, which is essential for exposing your Colab runtime.  
+
+### **2️⃣ Set Up Google Colab**  
+- Open the provided **Google Colab Notebook**: [📌 Click Here](https://colab.research.google.com/drive/1BJbUnfZ0qoouDyafjsWcth5JHhITSL78#scrollTo=EhKXNqknGilz)  
+- Add your **ngrok Authtoken** in the **Secrets Tab**.
+- ![](screenshots/1%20_%20secrets.png)
+- Connect to the **T4 GPU runtime type**.  
+- Run both the cells.  
+- Once **Ollama is successfully connected to ngrok**, you will receive an **ngrok URL** – **Copy it!** 🔗  
+  ![](screenshots/2%20_%20ngrok_url.png)
+  ![](screenshots/3%20_%20ollama%20running.png)
+
+### **3️⃣ Deploy to Hugging Face Spaces**  
+- Duplicate the Hugging Face Space using the button below:  
+
+  [![Duplicate Space](https://img.shields.io/badge/Duplicate%20Space-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/chandrakant-s4/open-webui?duplicate=true)  
+
+- Wait for the **installation of necessary libraries**. 🛠️  
+- **Create an Admin account**. 🔒
+- ![](screenshots/4%20_%20UI%20settings.png)
+- Navigate to **Settings > Admin Settings**.  
+- Go to **Connections**:  
+  - Disable the **Open API** toggle.  
+  - Enable the **Ollama API** toggle.  
+- Change the **Ollama URL** to the **ngrok URL** you copied from Colab.  
+- **Remove the trailing forward slash ("/")** in the URL.
+- ![](screenshots/5%20_%20Connections.jpg)
+- Click **Save**.  
+- Click **Start New Chat**.
+- ![](screenshots/6%20_%20New%20Chat.jpg)
+- You should now see all available **Ollama models** in the dropdown! 🎉  
 
 
-## Contributing 🙌
+## **Troubleshooting ⚠️**  
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+🔹 **ngrok Issues** – Ensure your **authtoken** is correctly set. If you face issues, check your **ngrok dashboard** for any errors.  
 
 
-## License ⚖️
+## **Contributing 🙌**  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are **highly encouraged**! If you find any **bugs** or have **suggestions** for improvement, feel free to **open an issue** or submit a **pull request**.  
+
+
+## **License ⚖️**  
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
